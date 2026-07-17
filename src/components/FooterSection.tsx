@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
+import { Instagram, Facebook, Music } from 'lucide-react';
 import { GoldDivider } from './GoldOrnaments';
 
 export const FooterSection: React.FC = () => {
@@ -30,6 +31,25 @@ export const FooterSection: React.FC = () => {
           className="w-full flex justify-center mb-6"
         >
           <GoldDivider />
+        </motion.div>
+
+        {/* Social Media Links */}
+        <motion.div
+          initial={{ opacity: 0, y: 10 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 0.2 }}
+          className="flex space-x-6 justify-center mb-8"
+        >
+          <a href="https://www.instagram.com/_everafterinvites_/" target="_blank" rel="noopener noreferrer" className="text-gold-dark hover:text-stone-900 transition-colors">
+            <Instagram className="w-5 h-5" />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61591686334310" target="_blank" rel="noopener noreferrer" className="text-gold-dark hover:text-stone-900 transition-colors">
+            <Facebook className="w-5 h-5" />
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61591686334310" target="_blank" rel="noopener noreferrer" className="text-gold-dark hover:text-stone-900 transition-colors">
+            <Music className="w-5 h-5" />
+          </a>
         </motion.div>
 
         {/* Initials Accent */}
