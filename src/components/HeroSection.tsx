@@ -46,7 +46,7 @@ export const HeroSection: React.FC = () => {
           }}
           className="font-cinzel text-5xl sm:text-6xl md:text-8xl text-white font-medium tracking-wider drop-shadow-md"
         >
-          Ahmed <span className="font-decorative text-gold text-4xl sm:text-5xl md:text-7xl mx-2 md:mx-4 font-normal lowercase tracking-normal">&amp;</span> Shrouq
+          Ahmed <span className="font-decorative text-gold text-4xl sm:text-5xl md:text-7xl mx-2 md:mx-4 font-normal lowercase tracking-normal">&amp;</span> Shrouk
         </motion.h1>
 
         {/* Announcement Text */}
