@@ -47,7 +47,7 @@ export const FooterSection: React.FC = () => {
           <a href="https://www.facebook.com/profile.php?id=61591686334310" target="_blank" rel="noopener noreferrer" className="text-gold-dark hover:text-stone-900 transition-colors">
             <Facebook className="w-5 h-5" />
           </a>
-          <a href="https://www.facebook.com/profile.php?id=61591686334310" target="_blank" rel="noopener noreferrer" className="text-gold-dark hover:text-stone-900 transition-colors">
+          <a href="https://www.tiktok.com/@_everafterinvites_" target="_blank" rel="noopener noreferrer" className="text-gold-dark hover:text-stone-900 transition-colors">
             <Music className="w-5 h-5" />
           </a>
         </motion.div>
