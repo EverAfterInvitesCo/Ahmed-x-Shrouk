@@ -4,10 +4,11 @@ import { MapPin, Clock } from 'lucide-react';
 import { GoldDivider, GoldCrest } from './GoldOrnaments';
 
 export const VenueSection: React.FC = () => {
-  const GOOGLE_MAPS_LINK = 'https://share.google/2CcSs4nQqtKxlQXi2';
+  // Updated Link for Kafr El Gazar, Banha
+  const GOOGLE_MAPS_LINK = 'https://maps.app.goo.gl/VgHBx5FWuR1Kievj9';
   
-  // Real embedded map for Al Rahman Al Raheem Venue, Cairo, Egypt
-  const MAP_EMBED_SRC = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3452.9348123284065!2d31.291771176288673!3d30.067389817112003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583f74959db6ef%3A0xe6bf44b5683936a7!2sAl-Rahman%20Al-Raheem%20Mosque!5e0!3m2!1sen!2seg!4v1710000000000!5m2!1sen!2seg';
+  // Updated Embedded Map source for the new location
+  const MAP_EMBED_SRC = 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3434.9082260273576!2d31.185203375836484!3d30.565365593854176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7c1c28c89c89f%3A0x6b403487f54c9b13!2sAl-Rahman%20Al-Raheem%20Mosque%2C%20Kafr%20El-Gazzar%2C%20Banha!5e0!3m2!1sen!2seg!4v1710000000000!5m2!1sen!2seg';
 
   return (
     <section
@@ -115,7 +116,7 @@ export const VenueSection: React.FC = () => {
                       <h4 className="font-cinzel text-xs tracking-wider text-stone-900 font-medium uppercase">Venue</h4>
                       <p className="mt-1 font-cormorant text-md md:text-lg text-stone-700 leading-relaxed">
                         Al Rahman Al Raheem Venue<br />
-                        <span className="text-xs text-stone-500 font-sans block mt-0.5">Salah Salem Road, Abbassia, Cairo, Egypt</span>
+                        <span className="text-xs text-stone-500 font-sans block mt-0.5">Kafr El Gazar, Banha, Egypt</span>
                       </p>
                     </div>
                   </div>
