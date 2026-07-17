@@ -1,21 +1,30 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useImperativeHandle, forwardRef } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 
-export const MusicPlayer: React.FC = () => {
+export const MusicPlayer = forwardRef((_, ref) => {
   const [isMuted, setIsMuted] = useState(true);
   const audioRef = useRef<HTMLAudioElement>(null);
 
+  useImperativeHandle(ref, () => ({
+    playMusic: () => {
+      if (audioRef.current) {
+        audioRef.current.muted = false;
+        audioRef.current.play().catch(e => console.log("Playback failed", e));
+        setIsMuted(false);
+      }
+    }
+  }));
+
   const toggleMute = () => {
     if (audioRef.current) {
-      audioRef.current.muted = !isMuted;
-      setIsMuted(!isMuted);
+      audioRef.current.muted = !audioRef.current.muted;
+      setIsMuted(audioRef.current.muted);
     }
   };
 
   return (
     <div className="fixed top-6 right-6 z-[100]">
-      {/* Updated the src to point to Royal.mp3 */}
-      <audio ref={audioRef} loop autoPlay muted>
+      <audio ref={audioRef} loop>
         <source src="/Royal.mp3" type="audio/mpeg" />
       </audio>
       
@@ -27,4 +36,4 @@ export const MusicPlayer: React.FC = () => {
       </button>
     </div>
   );
-};
+});
