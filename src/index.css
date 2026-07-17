@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Great+Vibes&family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
+  --font-cinzel: "Cinzel", serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-decorative: "Great Vibes", cursive;
+
+  --color-gold-light: #f5eedc;
+  --color-gold: #c5a880;
+  --color-gold-dark: #9e8055;
+  --color-ivory: #faf8f5;
+  --color-champagne: #f3ede2;
+  --color-beige-warm: #e6dfd3;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #0d0d0d;
+  color: #1c1a19;
+  font-family: var(--font-sans);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+@keyframes soft-glow {
+  0%, 100% {
+    box-shadow: 0 0 15px rgba(197, 168, 128, 0.15);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(197, 168, 128, 0.35);
+  }
+}
+
+.animate-glow {
+  animation: soft-glow 4s infinite ease-in-out;
+}
+
+.border-gold-subtle {
+  border-color: rgba(197, 168, 128, 0.25);
+}
+
+.border-gold-medium {
+  border-color: rgba(197, 168, 128, 0.5);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #faf8f5;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5a880;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #9e8055;
+}
+
