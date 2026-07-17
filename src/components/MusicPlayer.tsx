@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Volume2, VolumeX } from 'lucide-react';
 
 export const MusicPlayer: React.FC = () => {
@@ -14,8 +14,9 @@ export const MusicPlayer: React.FC = () => {
 
   return (
     <div className="fixed top-6 right-6 z-[100]">
+      {/* Updated the src to point to Royal.mp3 */}
       <audio ref={audioRef} loop autoPlay muted>
-        <source src="/Um kulthum.mp3" type="audio/mpeg" />
+        <source src="/Royal.mp3" type="audio/mpeg" />
       </audio>
       
       <button 
