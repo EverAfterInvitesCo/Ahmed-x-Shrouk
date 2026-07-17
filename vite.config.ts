@@ -6,7 +6,7 @@ import { defineConfig } from 'vite';
 export default defineConfig(() => {
   return {
     // This base path is required for GitHub Pages to find your assets
-    base: '/Ahmed-x-Shrouq/', 
+    base: '/Ahmed-x-Shrouk/', 
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
